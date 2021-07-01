@@ -1,0 +1,10 @@
+import { connect } from 'mongoose';
+
+const URI = 'mongodb://localhost/wacayo';
+
+connect(URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+    .then(db => console.log(">>> Database is connected"))
+    .catch(err => console.error(err));
