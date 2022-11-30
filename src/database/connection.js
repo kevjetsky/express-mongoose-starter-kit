@@ -1,7 +1,7 @@
 import { connect } from 'mongoose';
 
 // Replace <<NameDatabase>> for your local database name
-const URI = 'mongodb://localhost/<<NameDatabase>>';
+const URI = 'mongodb://0.0.0.0/<<NameDatabase>>';
 
 connect(URI, {
     useNewUrlParser: true,
